@@ -1,0 +1,128 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(88, 84, 84, 0.7)), url(../../resources/img/background/bg2.jpg);
+  // background-size: cover; /* cover para a imagem não ficar cortada*/
+  // background-position: center;
+  height: 100vh;
+  
+  color: rgb(150, 140, 151);
+  font-family: 'Lato', 'Arial', sans-serif;
+  /*a terceira opção é qualquer fonte daquela família, note que o nome da família não esta entre aspas.*/
+  font-weight: 300;
+  /*de acordo com a fonte que importamos*/
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  /*otimiza a renderização da fonte para letura, tendo uma melhor qualidade*/ 
+  
+}
+
+.img-body-login{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(88, 84, 84, 0.7)), url(../../resources/img/background/bg3.jpg);
+  background-size: cover; /* cover para a imagem não ficar cortada*/
+  background-position: center;
+}
+
+.btn-login{
+  width: 100%;
+}
+
+.hr-login{
+  width: 50%;
+}
+
+.texto-input-login{
+  font-size: 14px;
+}
+
+.texto-login-alternativo{
+  font-size: 14px;
+  font-style: normal;
+}
+
+.texto-login-alternativo a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.63);
+}
+
+.texto-esqueceu-senha{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.texto-esqueceu-senha a{ 
+  text-decoration: none;
+  color: rgba(15, 14, 14, 0.466);
+  font-weight: bold;
+}
+
+.logo {
+  width: 50%;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.texto-logo{
+  color: rgba(49, 49, 51, 0.808);
+  // font-family: 'Reenie Beanie', cursive;
+  // font-family: 'Nanum Brush Script', cursive;
+  //  font-family: 'Grand Hotel', cursive;
+  font-family: 'Heebo', sans-serif;
+  font-size: 45px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  // font-weight: normal;
+}
+
+.card-login{
+  // background-color: #bebebede;
+  background-color: #ffffffe0;
+  width: 340px; 
+}
+
+.texto-cadastrar{
+  color: rgba(255, 255, 255, 0.884);
+  font-size: 22px;
+}
+
+.texto-footer-login{
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 160px;
+  text-decoration: none;
+  text-transform: uppercase; 
+}
+
+.texto-footer-login a{
+   color: #ffffffa9;
+  // color: #f7bf07a9;
+}
+
+#fullpage{
+  height: 100vh;
+  overflow: hidden; // Esconde a outra págna, sem deixar rolar com o mouse
+}
+
+#fullpage section{
+  height: 100vh;
+}
+
+#fullpage section:nth-child(2)  h1{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 100vh;
+  font-size: 10em;
+  text-transform: uppercase;
+}
+
+#fullpage section:nth-child(2) {
+  background: rgb(38, 0, 255);
+  
+}
