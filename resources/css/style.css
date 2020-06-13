@@ -6,20 +6,24 @@
 
 body {
   height: 100vh;
-  color: #968c97;
+  /* color: #968c97; */
   font-family: 'Lato', 'Arial', sans-serif;
-  /*a terceira opção é qualquer fonte daquela família, note que o nome da família não esta entre aspas.*/
   font-weight: 300;
-  /*de acordo com a fonte que importamos*/
-  font-size: 20px;
-  text-rendering: optimizeLegibility;
-  /*otimiza a renderização da fonte para letura, tendo uma melhor qualidade*/ }
+  font-size: 15px;
+  text-rendering: optimizeLegibility;}
 
 .img-body-login {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(88, 84, 84, 0.7)), url(../../resources/img/background/bg3.jpg);
   background-size: cover;
-  /* cover para a imagem não ficar cortada*/
   background-position: center; }
+
+.img-main-header {
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.61), rgba(255, 255, 255, 0.589)), url(../../resources/img/background/bgHeaderMain.jpg); */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.815), rgba(255, 255, 255, 0.753)), url(../../resources/img/background/bgHeaderMain.jpg); 
+  background-size: cover;
+  background-position: center; 
+  height: 398px;
+}
 
 .btn-login {
   width: 100%; }
@@ -55,17 +59,18 @@ body {
 
 .texto-logo {
   color: rgba(49, 49, 51, 0.808);
-  font-family: 'Heebo', sans-serif;
-  font-size: 45px;
+  font-size: 20px;
+  font-weight: bold;
   margin-top: 10px;
-  margin-bottom: 35px; }
+  margin-bottom: 25px; }
 
 .card-login {
-  background-color: #ffffffe0;
-  width: 340px; }
+  background-color: #ffffffa8;
+  width: 340px;
+}
 
 .texto-cadastrar {
-  color: rgba(255, 255, 255, 0.884);
+  color: rgba(223, 217, 217, 0.884);
   font-size: 22px; }
 
 .texto-footer-login {
@@ -86,14 +91,51 @@ body {
   height: 100vh; }
 
 #fullpage section:nth-child(2) h1 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  line-height: 100vh;
-  font-size: 10em;
-  text-transform: uppercase; }
+  text-transform: uppercase;  
+  font-size: 24px;
+}
 
 #fullpage section:nth-child(2) {
-  background: #2600ff; }
+  background-image: linear-gradient(rgba(65, 62, 62, 0.808), rgba(90, 81, 81, 0.7)), url(../../resources/img/background/bg5.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
-/*# sourceMappingURL=style.css.map */
+.formposition{
+  margin-top: 140px;
+}
+
+/* Cor dos links */
+.color-link{
+  color: aliceblue;
+  font-weight: bold;
+}
+
+nav li a:hover{
+  color: rgb(73, 148, 185);
+}
+
+#navDrop:hover{
+    color: rgb(252, 230, 195);
+}
+
+/* Cor background principal do site */
+.main-bg-color-1{
+  /* background-color: rgb(42, 91, 146); */
+  background-color: rgb(45, 65, 88);
+  /* background-color: rgb(58, 62, 66);  */
+}
+
+.main-text-style-1{
+  color:white;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Bree Serif', serif;
+}
+
+.main-text-style-2{
+  color:rgb(23, 104, 180); 
+  font-weight: bold;
+  font-size: 42px;
+  font-family: 'Bree Serif', serif;
+}
