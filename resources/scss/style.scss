@@ -1,128 +1,517 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
-
-  // background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(88, 84, 84, 0.7)), url(../../resources/img/background/bg2.jpg);
-  // background-size: cover; /* cover para a imagem não ficar cortada*/
-  // background-position: center;
   height: 100vh;
-  
-  color: rgb(150, 140, 151);
   font-family: 'Lato', 'Arial', sans-serif;
-  /*a terceira opção é qualquer fonte daquela família, note que o nome da família não esta entre aspas.*/
   font-weight: 300;
-  /*de acordo com a fonte que importamos*/
-  font-size: 20px;
+  font-size: 15px;
   text-rendering: optimizeLegibility;
-  /*otimiza a renderização da fonte para letura, tendo uma melhor qualidade*/ 
-  
 }
 
-.img-body-login{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(88, 84, 84, 0.7)), url(../../resources/img/background/bg3.jpg);
-  background-size: cover; /* cover para a imagem não ficar cortada*/
-  background-position: center;
-}
-
-.btn-login{
+/* Essa parte é referênte a página de login */
+.btn-login {
   width: 100%;
 }
 
-.hr-login{
+.hr-login {
   width: 50%;
 }
 
-.texto-input-login{
+.texto-input-login {
   font-size: 14px;
 }
 
-.texto-login-alternativo{
+.texto-login-alternativo {
   font-size: 14px;
   font-style: normal;
 }
 
-.texto-login-alternativo a{
+.texto-login-alternativo a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.63);
 }
 
-.texto-esqueceu-senha{
+.texto-esqueceu-senha {
   font-size: 14px;
   font-weight: bold;
 }
 
-.texto-esqueceu-senha a{ 
+.texto-esqueceu-senha a {
   text-decoration: none;
   color: rgba(15, 14, 14, 0.466);
   font-weight: bold;
 }
 
-.logo {
-  width: 50%;
-  height: 100px;
-  object-fit: cover;
-  object-position: center;
-}
-
-.texto-logo{
-  color: rgba(49, 49, 51, 0.808);
-  // font-family: 'Reenie Beanie', cursive;
-  // font-family: 'Nanum Brush Script', cursive;
-  //  font-family: 'Grand Hotel', cursive;
-  font-family: 'Heebo', sans-serif;
-  font-size: 45px;
+.texto-logo {
+  color: rgba(253, 253, 255, 0.808);
+  font-size: 20px;
   margin-top: 10px;
-  margin-bottom: 35px;
-  // font-weight: normal;
+  margin-bottom: 25px;
+  margin: auto;
 }
 
-.card-login{
-  // background-color: #bebebede;
-  background-color: #ffffffe0;
-  width: 340px; 
+.card-login {
+  background-color: #ffffffa8;
+  width: auto;
 }
 
-.texto-cadastrar{
-  color: rgba(255, 255, 255, 0.884);
+.texto-cadastrar {
+  color: rgba(223, 217, 217, 0.884);
   font-size: 22px;
 }
 
-.texto-footer-login{
+.texto-footer-login {
   font-size: 13px;
   font-weight: bold;
   margin-top: 160px;
   text-decoration: none;
-  text-transform: uppercase; 
-}
-
-.texto-footer-login a{
-   color: #ffffffa9;
-  // color: #f7bf07a9;
-}
-
-#fullpage{
-  height: 100vh;
-  overflow: hidden; // Esconde a outra págna, sem deixar rolar com o mouse
-}
-
-#fullpage section{
-  height: 100vh;
-}
-
-#fullpage section:nth-child(2)  h1{
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  line-height: 100vh;
-  font-size: 10em;
   text-transform: uppercase;
 }
 
-#fullpage section:nth-child(2) {
-  background: rgb(38, 0, 255);
+.texto-footer-login a {
+  color: #ffffffa9;
+}
+/* Fim página login */
+
+/* Cor dos links */
+.color-link {
+  color: aliceblue;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  color: rgb(117, 175, 202);
+}
+
+#navDrop:hover {
+  color: rgb(195, 252, 209);
+}
+
+/* Cor background principal do site */
+.main-bg-color-1 {
+  background-color: #2e3440;
+}
+
+/* Segunda cor background principal do site */
+.main-bg-color-2 {
+  background-color: #3c4049;
+}
+
+/* Estilo de texto principal */
+.main-text-style-1 {
+  font-size: 30px;
+}
+
+/* Estilo de texto principal 2*/
+.main-text-style-2 {
+  font-weight: bold;
+  color: aliceblue;
+}
+
+@media screen and (max-width:400px) {
+  .fonteSmartphone1 {
+    font-size: 11.5px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width:401px) and (max-width:990px) {
+  .fonteSmartphone1 {
+    font-size: 13.5px;
+  }
+}
+
+@media screen and (min-width:991px) {
+  .fonteSmartphone1 {
+    font-size: 18px;
+  }
+}
+
+/* Efeito para parecer um terminal linux */
+#escrevendo::after {
+  content: '▋';
+  font-weight: bold;
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Efeito neon no ícone do computador */
+section .efeito-neon {
+  color: #3bb4b4;
+  animation-duration: 8s;
+  animation-name: cor_fonte;
+  animation-iteration-count: infinite;
+}
+
+section .efeito-neon p {
+
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  animation-name: brilho;
+}
+
+@keyframes cor_fonte {
+  0%,
+  100% {
+    color: #52c9c9;
+  }
+
+  25% {
+    color: #287070;
+  }
+
+  50% {
+    color: #62c7c7;
+  }
+
+  75% {
+    color: #299c9c;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .nomeSiteSmartphone {
+    font-size: 15px;
+    margin-left: 70px;
+  }
+}
+
+@media screen and (min-width:420px) {
+  .nomeSiteSmartphone {
+    font-size: 0px;
+  }
+}
+
+/* Ajustes do tamanho do Efeito digitando... */
+@media screen and (max-width:320px) {
+  .efeito-digitando {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width:321px) and (max-width:764px) {
+  .efeito-digitando {
+    font-size: 15px;
+    margin-left: 70px;
+  }
+}
+
+@media screen and (min-width:765px) and (max-width:919px) {
+  .efeito-digitando {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width:920px) {
+  .efeito-digitando {
+    margin: auto;
+  }
+}
+
+/* Layout do logo do site */
+.tituloPrincipal {
+  color: #69798a;
+  font-family: 'Zilla Slab', serif;
+}
+
+.tituloPrincipal::before {
+  content: "</";
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(148, 107, 187);
+}
+
+.tituloPrincipal::after {
+  content: ">";
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(148, 107, 187);
+}
+
+
+@media screen and (min-width: 601px) {
+  .tituloPrincipal {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .tituloPrincipal {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .tituloPrincipal {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  nav .tituloPrincipal {
+    font-size: 20px;
+    margin: auto;
+    margin-left: 40px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width:401px) and (max-width:990px) {
+  nav .tituloPrincipal {
+    font-size: 30px;
+    margin: auto;
+    margin-left: 50px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width:991px) {
+  nav .tituloPrincipal {
+    font-size: 20px;
+    margin: auto;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+}
+
+nav .tituloPrincipal {
+  color: rgb(180, 207, 233);
+  font-weight: bold;
+}
+
+nav .tituloPrincipal::before {
+  content: "</";
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(148, 107, 187);
+}
+
+nav .tituloPrincipal::after {
+  content: ">";
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(148, 107, 187);
+}
+
+@media screen and (max-width: 320px) {
+  .subtituloSite {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 322px) and (max-width: 362px) {
+  .subtituloSite {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 363px) and (max-width: 376px) {
+  .subtituloSite {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 378px) and (max-width: 416px) {
+  .subtituloSite {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .card-login {
+    width: 340px;
+  }
+}
+
+
+
+/* Glider: Parte aonde mostram as imagens das categorias */
+.glider-contain {
+  width: 90%;
+  max-width: 997px;
+  margin: 0 auto;
+}
+
+.glider-slide {
+  min-height: 150px;
+}
+
+.glider-slide img {
+  width: 90%;
+}
+
+.imgDimensoes {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #a67db8c5;
   
+  content: " ";
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+.photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.photo img {
+  opacity: 0.7;
+  width: 100%;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.glider-img {
+  height: 150px;
+  width: 100%;
+}
+
+.link-footer {
+  margin-top: 5px;
+  color: #abb2c0;
+  font-weight: bold;
+}
+
+.link-footer:hover {
+  color: #6090b8;
+  text-decoration: none;
+}
+
+.blockquote-footer  {
+  font-size: 15px;
+  color: #8892a8;
+}
+
+.texto-categoria {
+  font-weight: bold;
+}
+
+.icon-funcionamento {
+  font-size: 50px;
+}
+
+.card-text-funcionamento {
+  font-weight: bold;
+}
+
+#videos .nav-link {
+  color: aliceblue;
+  font-weight: bold;
+}
+
+#videos p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #69798a;
+}
+
+.final h3 {
+  font-weight: bold;
+}
+
+.final p {
+  font-size: 20px;
+}
+
+.texto-carousel {
+  font-weight: bold;
+  color: rgb(82, 156, 199);
+}
+
+/* Galeria centra Flexbox */
+
+.img-area{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-area img{
+  height: 100px;
+  width: 125px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+@media screen and (max-width:400px) {
+  .img-area img {
+    height: 60px;
+    width: 75px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.glider img {
+  height: 225px;
+  width: 275px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.single-img{
+  padding: 0 20px 20px ;
+}
+
+li span i {
+  font-size: 50px;
+  margin-right: 10px;
+  color: #b6e7ee;
 }

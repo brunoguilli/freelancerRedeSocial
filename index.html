@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="vendors/node_modules/bootstrap/compiler/bootstrap.css">
     
     <link rel="stylesheet" href="resources/css/style.css">
-    
-    <!-- Referenciando fontawesome -->
-    <!-- npm install @fortawesome/fontawesome-free -->
+
     <link rel="stylesheet" href="vendors/node_modules/font-awesome/css/font-awesome.css">
 
     <!-- Importação da fonte Lato -->
@@ -34,199 +32,919 @@
 
     <script src="vendors/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
-    <title>Rede Social</title>
+    <link rel="stylesheet" type="text/css" href="vendors/js/Glider.js-master/glider.css" />
+    
+    <script src="vendors/js/Glider.js-master/glider.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="vendors/js/DirectionAwareHoverEffect/css/style.css" />
+
+    <script src="vendors/js/DirectionAwareHoverEffect/js/modernizr.custom.97074.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <meta name="description" content="Site oficial FreelaScritp" />
+
+    <meta name="keywords" content="script, frelancer, home office, profissionais, programadores, freelascript" />
+
+    <meta name="author" content="FreelaScript" />
+
+    <title>FreelaScript</title>
 
   </head>
   
   <body>
 
-    <!-- Section hero-header -->
-    <section id="hero-header">
-
-      <header>
-
-        <nav class="navbar navbar-expand-lg main-bg-color-1" style="height: 46px;">
-  
-            <div class="container">
-  
-                <!-- Botão para recolher o navbar -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-  
-                <div class="collapse navbar-collapse" id="navbarSite">
-                    
-                    <ul class="navbar-nav mr-auto">
-  
-                        <li class="nav-item">
-                            <a class="nav-link color-link" href="#sobre">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link color-link" href="galeria.php">TECNOLOGIA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link color-link" href="servicos.php">MARKETING</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link color-link" href="contato.html">ESCRITA</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link color-link" href="contato.html">OUTROS</a>
-                        </li>
-
-  
-                    </ul>
-                    
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Lista com dropdown dentro -->
-                        <li class="nav-item dropdown">
-                            
-                            <a class="nav-link dropdown-toggle color-link btn-sm" style="background-color: rgb(226, 151, 12);" href="#" data-toggle="dropdown" id="navDrop">
-                                LOGIN
-                            </a>
-  
-                            <!-- Sub itens do menu dropdown -->
-                            <div class="dropdown-menu dropdown-menu-right">
-                              
-                              <!-- Loggin -->
-                              <div class="card-login">
-      
-                                <div class="card-body mr-4 ml-4">
-                                     
-                                    <div class="row justify-content-sm-center">
-                                        <h1 class="texto-logo">Entrar na conta</h1>
-                                    </div>
-                
-                                    <form> 
-                
-                                        <div class="form-group">
-                                            <input type="text" class="form-control texto-input-login" id="usuario" aria-describedby="Usuário" name="usuario" placeholder="Nome de usuário ou e-mail">
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <input type="password" class="form-control texto-input-login" id="exampleInputPassword1" placeholder="Senha">
-                                        </div>
-                                        
-                                        <button type="submit" class="btn btn-primary btn-login">Entrar</button>
-                                        
-                                    </form>  
-                
-                                    <hr class="mt-4">
-                
-                                    <div class="row justify-content-sm-center texto-login-alternativo mt-2" >
-                                    
-                                    <svg aria-hidden="true" class="native svg-icon iconGoogle mr-1" width="22" height="22" viewBox="0 0 18 18">
-                                        <path d="M16.51 8H8.98v3h4.3c-.18 1-.74 1.48-1.6 2.04v2.01h2.6a7.8 7.8 0 0 0 2.38-5.88c0-.57-.05-.66-.15-1.18z" fill="#4285F4"></path>
-                                        <path d="M8.98 17c2.16 0 3.97-.72 5.3-1.94l-2.6-2a4.8 4.8 0 0 1-7.18-2.54H1.83v2.07A8 8 0 0 0 8.98 17z" fill="#34A853"></path>
-                                        <path d="M4.5 10.52a4.8 4.8 0 0 1 0-3.04V5.41H1.83a8 8 0 0 0 0 7.18l2.67-2.07z" fill="#FBBC05"></path>
-                                        <path d="M8.98 4.18c1.17 0 2.23.4 3.06 1.2l2.3-2.3A8 8 0 0 0 1.83 5.4L4.5 7.49a4.77 4.77 0 0 1 4.48-3.3z" fill="#EA4335"></path>
-                                    </svg> 
-                                    
-                                    <a href="#">Entrar com o Google</a>
-                
-                                    </div>
-                
-                                    <div class="row justify-content-sm-center texto-login-alternativo mt-2" >
-                
-                                        <svg aria-hidden="true" class="svg-icon iconFacebook mr-1" width="22" height="22" viewBox="0 0 18 18">
-                                        <path d="M3 1a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3zm6.55 16v-6.2H7.46V8.4h2.09V6.61c0-2.07 1.26-3.2 3.1-3.2.88 0 1.64.07 1.87.1v2.16h-1.29c-1 0-1.19.48-1.19 1.18V8.4h2.39l-.31 2.42h-2.08V17h-2.5z" fill="#4167B2"></path>
-                                        </svg>
-                                        
-                                        <a href="#">Entrar com o Facebook</a>
-                                    
-                                    </div>
-                
-                                    <h3 class="text-center mt-4 mb-2 texto-esqueceu-senha">
-                                    
-                                        <a href="#">Esqueceu a senha?</a>
-                                    
-                                    </h3>
-                
-                                </div>
-                    
-                              </div>
-                              
-                            </div>
-  
-                        </li>
-
-                    </ul>
-  
-                </div>
-  
-            </div>
-  
-        </nav>
-        
-        <!-- Imagem de fundo -->
-        <div class="row img-main-header bg-light">
-          
-          <div class="container">
-          
-            <div class="col-sm-12 col-md-12 col-lg-12 mt-5 mb-5">
-              
-              <div class="row"> 
-                
-                <div class="col-6">
-
-                  <div class="row">
-
-                    <h1 class="main-text-style-2 text-start">Encontre rapidamente o <br> freelancer certo!</h1>
-
-                  </div>
-
-                </div>
-
-                <div class="col-6">
-
-                  <div class="row justify-content-sm-end">
-                    
-                    <div class="card mb-3" style="width: 24rem;">
-              
-                      <div class="card-header main-bg-color-1 main-text-style-1 text-center">Prcisando de <br> profissionais?</div>
-                    
-                      <div class="card-body">
-                      
-                        <form>
-                          
-                          <div class="form-group">
-                            
-                            <select class="form-control">
-                              <option>Website e Apps</option>
-                              <option>Software e sistema</option>
-                              <option>Arte gráfica e Design</option>
-                              <option>Marketing e Comunicação</option>
-                              <option>Outros</option>
-                            </select>
+    <header>
     
-                            <button type="submit" class="btn btn-success btn-login mt-4">Buscar</button>
-    
-                          </div>
-                      
+        <!-- Section hero-header -->
+        <section id="hero-header">
+
+            <nav class="navbar navbar-expand-lg main-bg-color-1 ">
+                
+                <!-- Contraliza o conteúdo, inclusive o novbar -->
+                <div class="container">
+                    
+                    <a href="index.html" style="text-decoration: none; margin: auto; margin-top: 15px;">
+                        <h3 class="nomeSiteSmartphone tituloPrincipal mb-3 text-center">  <i class="fas fa-mug-hot"></i>  FreelaScript </h3>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                        <i class="fa fa-bars text-light" aria-hidden="true"></i>
+                    </button>
+                    
+                    <!-- Conteúdo do navbar -->
+                    <div class="collapse navbar-collapse" id="navbarSite">
+
+                        <ul class="navbar-nav mr-auto">
+
+                            <li class="nav-item">
+                                <a class="nav-link color-link" href="#sobre">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-link" href="#">Tecnologia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-link" href="#">Serviços</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link color-link" href="#">Contatos</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link color-link" href="#">Outros</a>
+                            </li>
+                        
+                        </ul>
+                        
+                        <form class="form-inline mr-4 mb-2 mt-2">
+                            
+                            <input class="form-control ml-4 mr-2" type="search" style="width: 180px;" placeholder="buscar profissinais...">
+                            <button class="btn btn-dark" type="submit">ok</button>
+                        
                         </form>
-                      
-                      </div>
-                    
+
+                        <!-- ml-auto = Margin left = UL Alinhado para a direita -->
+                        <ul class="navbar-nav ml-auto">
+                            
+                            <li class="nav-item dropdown">
+                            
+                                <a class="nav-link dropdown-toggle color-link btn btn-sm" style="color: aliceblue; background-color: rgb(156, 98, 211);" href="#" data-toggle="dropdown" id="navDrop">
+                                  Login
+                                </a>
+                                
+                                <!-- Sub itens do menu dropdown -->
+                                <div class="dropdown-menu dropdown-menu-right bg-info">
+
+                                    <!-- Loggin -->
+                                    <div class="card-login bg-dark justify-content-center">
+
+                                        <div class="card-body mr-4 ml-4">
+                                                    
+                                            <div class="row mb-2" >
+                                                <h3 class="texto-logo">Entrar na conta</h3>
+                                            </div>
+                        
+                                            <form action="cadastro.html"> 
+                        
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control texto-input-login" id="usuario" name="usuario" placeholder="Nome de usuário ou e-mail">
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control texto-input-login" id="exampleInputPassword1" placeholder="Senha">
+                                                </div>
+                                                
+                                                <button type="submit" class="btn btn-info btn-login">Entrar</button>
+                                                <button type="submit" class="btn mt-2 btn-dark btn-login">Cadastrar</button>
+
+                                            </form>  
+                        
+                                            <hr class="mt-4">
+                        
+                                            <div class="row justify-content-center texto-login-alternativo mt-2" >
+                                                
+                                                <svg aria-hidden="true" class="native svg-icon iconGoogle mr-1" width="22" height="22" viewBox="0 0 18 18">
+                                                    <path d="M16.51 8H8.98v3h4.3c-.18 1-.74 1.48-1.6 2.04v2.01h2.6a7.8 7.8 0 0 0 2.38-5.88c0-.57-.05-.66-.15-1.18z" fill="#4285F4"></path>
+                                                    <path d="M8.98 17c2.16 0 3.97-.72 5.3-1.94l-2.6-2a4.8 4.8 0 0 1-7.18-2.54H1.83v2.07A8 8 0 0 0 8.98 17z" fill="#34A853"></path>
+                                                    <path d="M4.5 10.52a4.8 4.8 0 0 1 0-3.04V5.41H1.83a8 8 0 0 0 0 7.18l2.67-2.07z" fill="#FBBC05"></path>
+                                                    <path d="M8.98 4.18c1.17 0 2.23.4 3.06 1.2l2.3-2.3A8 8 0 0 0 1.83 5.4L4.5 7.49a4.77 4.77 0 0 1 4.48-3.3z" fill="#EA4335"></path>
+                                                </svg> 
+                                                
+                                                <a href="#" class="text-light"  >Entrar com o Google</a>
+                        
+                                            </div>
+                        
+                                            <div class="row justify-content-center texto-login-alternativo mt-2" >
+                        
+                                                <svg aria-hidden="true" class="svg-icon iconFaceb   ook mr-1" width="22" height="22" viewBox="0 0 18 18">
+                                                    <path d="M3 1a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H3zm6.55 16v-6.2H7.46V8.4h2.09V6.61c0-2.07 1.26-3.2 3.1-3.2.88 0 1.64.07 1.87.1v2.16h-1.29c-1 0-1.19.48-1.19 1.18V8.4h2.39l-.31 2.42h-2.08V17h-2.5z" fill="#4167B2"></path>
+                                                </svg>
+                                                
+                                                <a href="#" class="text-light" >Entrar com o Facebook</a>
+                                            
+                                            </div>
+                        
+                                            <h3 class="text-center mt-4 mb-2 texto-esqueceu-senha">
+                                            
+                                                <a href="#" class="text-light">Esqueceu a senha?</a>
+                                            
+                                            </h3>
+                        
+                                        </div>
+                        
+                                    </div>
+
+                                </div>
+
+                            </li>
+
+                        </ul>
+
                     </div>
 
-                  </div>
+                </div>
+
+            </nav>
+
+            <div id="carouselSite" class="carousel slide" data-ride="carousel">
+
+                <!-- Mostra o indicador da posição das fotos -->
+                <ol class="carousel-indicators">
+                    <!-- class="active" Indica que é o primeira foto, pois indicamos isso também na img -->
+                    <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselSite" data-slide-to="1" ></li>
+                    <li data-target="#carouselSite" data-slide-to="2" ></li>
+                </ol>
+
+                <!-- Imagens -->
+                <div class="carousel-inner">
+                    <!-- active: Informa que será a primeira imagem a ser exibida -->
+                    <div class="carousel-item active photo">
+                        <!-- img-fluid: Imagem ocupa todo o espaço -->
+                        <!-- d-block: Faz com que a imagem em todas as resoluções de tela que nos configurarmos -->
+                        <img src="resources/img/background/bg1.jpg" alt="Melhores Profissionais" class="img-fluid d-block imgDimensoes" >
+
+                        <!-- Textos das imagens -->
+                        <!-- d-none: Display-none Faz com que o conteúdo suma -->
+                        <!-- d-none d-md-block: O texto vai exibir somente do tamanho md para cima -->
+                        <div class="carousel-caption d-md-block">
+                            <h1 >O <a href="#" class="texto-carousel" >melhor</a> time de profissionais da web!</h1>
+                            <p class="lead">Encontre os melhores profissionais na área da tecnologia.</p>
+                        </div>
+
+                    </div>
+                    
+                    <div class="carousel-item photo">
+
+                        <img src="resources/img/background/bg3.jpg" alt="Troque experiência" class="img-fluid d-block imgDimensoes" >
+                        
+                        <!-- Textos das imagens -->
+                        <div class="carousel-caption d-md-block">
+                            <h1>Troque <a href="#" class="texto-carousel">experiência</a> com outros profissionais</h1>
+                            <p class="lead" >Aqui você pode trocar conhecimento com outros profissinais para avançar nos seus projetos</p>
+                        </div>
+
+                    </div>
+                    
+                    <div class="carousel-item photo">
+
+                        <img src="resources/img/background/bg2.jpg" alt="Trabalho 100% remoto" class="img-fluid d-block imgDimensoes" >
+
+                        <!-- Textos das imagens -->
+                        <div class="carousel-caption d-md-block">
+                            <h1>Trabalho 100% <a href="#" class="texto-carousel" >remoto</a></h1>
+                            <p class="lead">Trabalhe no conforto de sua casa ou aonde você desejar</p>
+                        </div>
+
+                    </div>
 
                 </div>
 
-              </div>
-  
+                <!-- Faz ir para trás -->
+                <!-- Colocar o Id do carousel carouselSite que foi definido na div anterior -->
+                <a class="carousel-control-prev" href="#carouselSite" data-slide="prev">
+                    <!-- Icone -->
+                    <span class="carousel-control-prev-icon ">x</span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+
+                <!-- Faz ir para frente -->
+                <!-- Colocar o Id do carousel carouselSite que foi definido na div anterior -->
+                <a class="carousel-control-next" href="#carouselSite" data-slide="next">
+                    <!-- Icone -->
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Avançar</span>
+                </a>
+
             </div>  
-  
-          </div>
-  
-        </div>
-  
-      </header>
+        
+        </section> <!-- Fim section hero-header -->
 
-    </section>
-    <!-- Fim section hero-header -->
+    </header>
 
+    <main>
 
+        <section id="buscar-profissionais">
+
+            <div class="row main-bg-color-1" >
+    
+                <div class="col-12 mt-5 mb-5">
+                    
+                    <div class="container">
+                    
+                        <div class="row justify-content-sm-center">
+                        
+                            <div class="col-sm-6 col-md-4 ">
+                                
+                                <div class="card border-info main-bg-color-1" style="max-width: 24rem; margin: auto;">
+                                        
+                                    <div class="card-header main-bg-color-1 main-text-style-1 text-center text-info">
+                                        
+                                        Precisando de 
+                                        <br> 
+                                        profissionais?
+                                        <br>
+
+                                        <!-- Efeito neon -->
+                                        <i class="fa fa-desktop efeito-neon" aria-hidden="true"></i> 
+                                    
+                                    </div>
+                                        
+                                    <div class="card-body">
+    
+                                        <form>
+                                            
+                                            <div>
+                                              
+                                              <select class="bg-dark border-info text-info main-bg-color-1" style="width: 100%;">
+                                                  <option>Website e Apps</option>
+                                                  <option>Software e sistema</option>
+                                                  <option>Banco de dados</option>
+                                                  <option>Gerência de projetos</option>
+                                                  <option>Outros</option>
+                                              </select>
+    
+                                            </div>
+    
+                                            <button type="submit" class="text-info border-info btn-login mt-2 main-bg-color-1">Buscar</button>
+                                            
+                                        </form>
+    
+                                    </div>
+                    
+                                </div>
+                    
+                            </div>
+                            
+                            <!-- Essa parte tem o efeito de máquina de escrever -->
+                            <div class="col-sm-10 col-md-7 " >
+                                
+                                <div class="row mt-4 efeito-digitando">
+    
+                                   <a href="cadastro.html"><h3 class="text-light texto-cadastrar"> Cadastre-se </h3></a> 
+    
+                                </div>
+
+                                <div class="row efeito-digitando">
+    
+                                    <p class="main-text-style-2 fonteSmartphone1"> > </p> <p class="main-text-style-2 ml-2 fonteSmartphone1 ">Encontre rapidamente o freelancer certo!</p>
+    
+                                </div>
+    
+                                <div class="row efeito-digitando">
+    
+                                    <p class="main-text-style-2 fonteSmartphone1" > > </p> <p class="main-text-style-2 ml-2 fonteSmartphone1" id="escrevendo">Cadastre-se agora mesmo...</p>
+    
+                                </div>
+    
+                            </div>
+                        
+                        </div>
+    
+                    </div>
+                
+                </div>
+    
+            </div>      
+    
+        </section> <!-- Buscar-profissionais-->
+
+        <section id="intro">
+
+            <div class="container mt-4">
+      
+                <div class="row">
+        
+                    <div class="col-12 text-center my-5">
+
+                        <!-- Logo do site -->
+                        <h1 class="tituloPrincipal" id="sobre" >  <i class="fas fa-mug-hot"></i>  FreelaScript </h1>
+        
+                    </div>
+        
+                </div>
+        
+                <div class="row mb-5 text-center">
+        
+                    <div class="col-12">
+                    
+                        <h2 class="long-copy subtituloSite" style="font-size: 23px;">Venha fazer parte da melhor equipe programadores da web</h2>
+        
+                        <p class="long-copy" style="font-size: 20px;">
+                            <br>
+                            Aqui você vai encontrar diversas oportunidades e também poderá trocar conhecimento com outros profissionais
+                        </p>
+                    
+                    </div>
+        
+                </div>
+                
+                <div class="row">
+                
+                    <div class="col-12 text-center text-dark">
+        
+                        <h3 style="font-size: 18px; font-weight: bold;"> Nossas categorias </h3>
+
+                    </div>
+        
+                </div>
+
+                <div class="row">
+                
+                    <div class="col-12 text-center my-2 mb-5">
+            
+                        <div class="glider-contai">
+                        
+                            <div class="glider">
+                                <div>
+                                    <img alt="Backend" class="glider-img" src="resources/img/glider/programadorBackend.jpg">
+                                    <p class="texto-categoria">Backend</p>
+                                </div>
+                                <div>
+                                    <img alt="Frontend" class="glider-img" src="resources/img/glider/programadorFrontend.jpg" >
+                                    <p class="texto-categoria">Frontend</p>
+                                </div>
+                                <div>
+                                    <img alt="DBA" class="glider-img" src="resources/img/glider/dba.jpg" >
+                                    <p class="texto-categoria">DBA</p>
+                                </div>
+                                <div>
+                                    <img alt="Fullstack" class="glider-img" src="resources/img/glider/programadorFullStack.png" >
+                                    <p class="texto-categoria">Full Stack</p>
+                                </div>
+                                <div>
+                                    <img alt="Gerenciamento de projetos" class="glider-img" src="resources/img/glider/GerenteProjetos.jpg" >
+                                    <p class="texto-categoria">Gerência de Projetos</p>
+                                </div>
+                            </div>
+                
+                            <button class="glider-prev">&laquo;</button>
+                            <button class="glider-next">&raquo;</button>
+                            <div id="dots"></div>
+            
+                        </div>
+            
+                    </div>
+                
+                </div>
+
+            </div>  
+      
+        </section> <!-- Fim section intro -->
+    
+        <section id="funcionamento" >
+    
+            <div class="main-bg-color-1">
+            
+                <div class="container">
+        
+                    <div class="row">
+            
+                        <div class="col-12 text-center my-5 text-light">
+            
+                            <h1 style="font-size: 25px; font-weight: bold;"> Como funiciona?</h1>
+                            
+                            <h2 class="long-copy text-light" style="font-size: 20px; font-weight: bold;">Anuncie o seu trabalho facilmente, contrate freelancers e pague com segurança.</h2>
+                        
+                        </div>
+            
+                    </div>
+            
+                    <div class="row justify-content-sm-center">
+                        
+                        <div class="col-sm-6 col-md-4 mb-5">
+                            
+                            <div class="card text-center main-bg-color-1 text-light border-info">
+                                
+                                <a href="#" class="icon-funcionamento">
+                                    
+                                  <i class="far fa-file mt-4 " aria-hidden="true"></i>
+            
+                                </a>
+                                
+                                <div class="card-body">
+                                    
+                                <h4 class="card-title">Publique uma vaga</h4>
+                                    
+                                    <p class="card-text card-text-funcionamento" >
+                                        Publique a sua vaga para milhares de profissionais, você irá receber propostas de freelancers talentosos em poucos minutos.
+                                    </p>
+            
+                                </div>
+            
+                            </div>
+            
+                        </div>
+            
+                        <div class="col-sm-6 col-md-4">
+                            
+                            <div class="card mb-5 text-center main-bg-color-1 text-light border-info">
+                                
+                                <a href="#" class="icon-funcionamento">
+                                    
+                                    <i class="fa fa-users mt-4" aria-hidden="true"></i>
+                
+                                </a>
+                                
+                                <div class="card-body">
+                
+                                    <h4 class="card-title">Contrate</h4>
+                                    
+                                    <p class="card-text card-text-funcionamento" >
+                                        Reveja o histórico de trabalho, feedback de clientes e portfólio para limitar os candidatos. Então faça uma entrevista pelo chat e escolha o melhor.
+                                    </p>
+                
+                                </div>
+                
+                            </div>
+            
+                        </div>
+            
+                        <div class="col-sm-6 col-md-4">
+                            
+                            <div class="card mb-5 text-center main-bg-color-1 text-light border-info">
+                                
+                                <a href="#" class="icon-funcionamento">
+                                    <i class="fas fa-shield-alt mt-4" aria-hidden="true"></i>
+                                </a>
+                                
+                                <div class="card-body">
+                                    
+                                    <h4 class="card-title" >Pague com segurança</h4>
+                                    
+                                    <p class="card-text card-text-funcionamento">
+                                        Com o pagamento seguro do FreelaScript, o pagamento será repassado para o freelancer somente quando o projeto estiver concluído.
+                                    </p>
+                
+                                </div>
+                
+                            </div>
+            
+                        </div>
+            
+                    </div>
+        
+                </div>  
+        
+            </div>
+            
+        </section> <!-- Fim section funcionamento -->
+        
+        <section id="dicas">
+            
+            <!-- jumbotron -->
+            <div class="jumbotron  jumbotron-fluid mb-0">
+                    
+                <div class="container">
+    
+                    <div class="row">
+    
+                        <div class="col-12 text-center">
+    
+                            <h1 style="font-size: 25px; font-weight: bold;"> <i class="fab fa-youtube" style="color: red;"></i> Dicas do site</h1>
+                                    
+                            <h2 class="long-copy text-dark" style="font-size: 20px; font-weight: bold;">Seguem alguns vídeos explicando detalhadamente como o nosso site funciona.</h2>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="row">
+    
+                        <div class="col-12">
+    
+                            <ul class="nav nav-pills justify-content-center mb-4 mt-2" id="pills-nav" role="tablist">
+    
+                                <li class="nav-item mb-2">
+                                    <a class="nav-link bg-info active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01" >Como se cadastar?</a>
+                                </li>
+    
+                                <li class="nav-item ml-2 mb-2">
+                                    <a class="nav-link bg-info text-light" id="nav-pills-02" data-toggle="pill" href="#nav-item-02" >Escolhendo um projeto</a>
+                                </li>
+
+                                <li class="nav-item ml-2 mb-2">
+                                    <a class="nav-link bg-info text-light" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">Postando um projeto</a>
+                                </li>
+    
+                            </ul>
+    
+                            <div class="tab-content " id="nav-pills-content">
+    
+                                <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+    
+                                    <div class="row">
+    
+                                        <div class="col-sm-6 mb-4">
+    
+                                            <div class="embed-responsive embed-responsive-16by9">
+    
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tBRqx3HQG0o"> </iframe>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Nesse vídeo você vai aprender a se cadastrar no site, tento para desenvolvedores como clientes a fim de buscar profissionais 
+                                            </p>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+    
+                                    <div class="row">
+    
+                                        <div class="col-sm-6 mb-4">
+    
+                                            <div class="embed-responsive embed-responsive-16by9">
+    
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9YffrCViTVk"> </iframe>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Aqui você vai enteder como funcina a parte de buscar por projetos. Tire todas as suas dúvidas asistindo aos nossos vídeos!
+                                            </p>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+    
+                                    <div class="row">
+    
+                                        <div class="col-sm-6 mb-4">
+    
+                                            <div class="embed-responsive embed-responsive-16by9">
+    
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tBRqx3HQG0o"> </iframe>
+                                        
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Aqui é a parte do cliente, você vai entender como postar um projeto e encontrar o profissional perfeito para te ajudar!
+                                            </p>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </section> <!-- Fim section videos -->
+
+        <section id="tecnoogia">
+            
+            <div class="bg-dark">
+                
+                <div class="container">
+      
+                    <div class="row">
+            
+                        <div class="col-12 text-center mt-5 text-light">
+    
+                            <h1 style="font-size: 25px; font-weight: bold;"> Tecnologias  </h1>
+    
+                        </div>
+            
+                    </div>
+    
+                    <ul id="da-thumbs" class="da-thumbs img-area ">
+                        <li>
+                            <a href="#">
+                                <img alt="JavaScript" src="resources/img/galeria_central/javascript.png">
+                                <div><span> <i class="fab fa-js" style="color: rgb(71, 219, 145);" ></i>JavaScript</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="Node" src="resources/img/galeria_central/node.jpg" />
+                                <div><span> <i class="fab fa-node"></i>Node</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="Html/Css" src="resources/img/galeria_central/html.jpg"/>
+                                <div><span> <i class="fab fa-html5" style="color: orange;"></i>Html/Css</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="Sql" src="resources/img/galeria_central/sql.jpg" />
+                                <div><span> <i class="fas fa-database text-info"></i>SQL</span></div>
+                            </a>
+                        </li>
+                        <li>	
+                            <a href="#">
+                                <img alt="Python" src="resources/img/galeria_central/python.jpg" />
+                                <div><span> <i class="fab fa-python text-warning"></i>Python</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="Java" src="resources/img/galeria_central/java.jpg"/>
+                                <div><span> <i class="fab fa-java text-primary"></i>Java</span></div>
+                                
+                            </a>
+                        </li>
+                    </ul>
+    
+                </div>  
+
+            </div>    
+      
+        </section> <!-- Fim section tecnologia -->
+
+    </main>
+
+    <footer>
+        
+        <section id="final">
+    
+            <div class="bg-dark">
+            
+                <div class="container">
+            
+                    <div class="row justify-content-sm-center">
+
+                        <div class="col-sm-2 mb-3">
+            
+                            <h3 class="text-light mt-5">Menu</h3>
+            
+                            <div class="list-group text-justify">
+                                <!-- list-group-item-action = Para dizer que é um link -->
+                                <a href="index.html" class="link-footer">Início</a>
+                                <a href="#sobre" class="link-footer">Sobre</a>
+                                <a href="#" class="link-footer">Dúvidas</a>
+                                <a href="#" class="link-footer">Serviços</a>
+                                <a href="#" class="link-footer">Contatos</a>
+                            </div>
+            
+                        </div>
+
+                        <div class="col-sm-2 mb-3">
+            
+                            <h3 class="text-light mt-5">FreelanScript</h3>
+            
+                            <div class="list-group text-justify">
+                                <!-- list-group-item-action = Para dizer que é um link -->
+                                <a href="#" class="link-footer">Categorias</a>
+                                <a href="#" class="link-footer">Projetos</a>
+                                <a href="#" class="link-footer">Freelancers</a>
+                                <a href="#" class="link-footer">Empresa</a>
+                                <a href="#" class="link-footer">portfólio</a>
+                                <a href="#" class="link-footer">Gerenciamento de projetos</a>
+                            </div>
+            
+                        </div>
+            
+                        <div class="col-sm-2 mb-3">
+            
+                            <h3 class="text-light mt-5">Sobre</h3>
+            
+                            <div class="list-group text-justify">
+                                <!-- list-group-item-action = Para dizer que é um link -->
+                                <a href="#" class="link-footer" >Sobre Nós</a>
+                                <a href="#" class="link-footer">Como Funciona</a>
+                                <a href="#" class="link-footer">Segurança</a>
+                                <a href="#" class="link-footer">Investidor</a>
+                                <a href="#" class="link-footer">Mapa do site</a>
+                                <a href="#" class="link-footer">Comentários</a>
+                                <a href="#" class="link-footer">Notícias</a>
+                            </div>
+            
+                        </div>
+            
+                        <div class="col-sm-4">
+        
+                            <div class="btn-group-vertical btn-block btn-goup-lg mt-5" role="group">
+
+                                <a class="btn btn-outline-light" href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+                                <a class="btn btn-outline-light" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                            
+                            </div>
+            
+                            <div class="row mt-4 justify-content-center">
+                                
+                                <p class="link-footer" > Contato </p>
+                                
+                            </div>
+            
+                            <div class="row justify-content-center" >
+                                <h3 class="link-footer"> contato@freelascript.com </h3>
+                            </div>
+        
+            
+                        </div>
+            
+                        <div class="col-12 mt-5">
+            
+                            <!-- blockquote = Citação -->
+                            <blockquote class="blockquote-footer text-center">
+            
+                                <p class="mb-0">Venha fazer parte dessa grande rede de prifissionais</p>
+                                
+                                <div class="blockquote" style="font-size: 15px;" > <cite title="Título">FreelaScript</cite>  </div>
+            
+                            </blockquote>
+            
+                        </div>            
+            
+                    </div>
+        
+                </div>  
+        
+            </div>
+            
+        </section> <!-- Fim section final -->
+
+    </footer>
+    
+    <script>
+
+      // Function para efeito máquina de escrever 
+      function typeWriter(elemento){
+
+        // innerHTML = Busca o texto que está dentro do elemento
+        // split('') = Coloca cada letra do texto em um array
+        const textoArray = elemento.innerHTML.split('');
+        
+        // limpa o elemento
+        elemento.innerHTML = '';
+
+        textoArray.forEach(( letra, i ) => {
+
+          // Adiciona um tempo para cada item do array
+          // 75 * i  = Cálculo para adicionar cada letra em um determinado tempo
+          setTimeout(() => elemento.innerHTML += letra,75 * i );
+        
+        });
+      }
+
+      // Pega o elemento com o ID #escrevendo
+      const texto = document.querySelector('#escrevendo');
+      
+      // Executa a função typeWriter na abertura do site
+      typeWriter(texto);
+
+      // Temporizador: Faz com que a função typeWriter seja executada infinitamente
+      function Temporizador(initiate) {
+          if (initiate !== true) {
+            typeWriter(texto);
+          }
+          // Intervalos de 9 segundos
+          setTimeout(Temporizador, 9000);
+      }
+
+      $(function() {
+          Temporizador(true);
+      });
+
+    </script>
+
+    <script>
+      window.addEventListener('load',function(){
+        
+        document.querySelector('.glider').addEventListener('glider-slide-visible', function(event){
+            var glider = Glider(this);
+            console.log('Slide Visible %s', event.detail.slide)
+        });
+        document.querySelector('.glider').addEventListener('glider-slide-hidden', function(event){
+            console.log('Slide Hidden %s', event.detail.slide)
+        });
+        document.querySelector('.glider').addEventListener('glider-refresh', function(event){
+            console.log('Refresh')
+        });
+        document.querySelector('.glider').addEventListener('glider-loaded', function(event){
+            console.log('Loaded')
+        });
+
+        window._ = new Glider(document.querySelector('.glider'), {
+            slidesToShow: 1, //'auto',
+            slidesToScroll: 1,
+            itemWidth: 150,
+            draggable: true,
+            scrollLock: false,
+            dots: '#dots',
+            rewind: true,
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            },
+            responsive: [
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToScroll: 'auto',
+                        itemWidth: 300,
+                        slidesToShow: 'auto',
+                        exactWidth: true
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToScroll: 4,
+                        slidesToShow: 4,
+                        dots: false,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToScroll: 3,
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToScroll: 2,
+                        slidesToShow: 2,
+                        dots: false,
+                        arrows: false,
+                        scrollLock: true
+                    }
+                }
+            ]
+        });
+      });
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <script src="vendors/js/DirectionAwareHoverEffect/js/jquery.hoverdir.js"></script>	
+    <script>
+        $(function() {
+        
+            $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+        });
+    </script>
 
   </body>
 
